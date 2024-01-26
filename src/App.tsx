@@ -1,7 +1,6 @@
 import { useState, useEffect, ReactNode } from 'react';
 import { get } from './util/http';
 import BlogPosts, { type BlogPost } from './components/BlogPosts';
-import dataFetching from './assets/data-fetching.png';
 import { z } from 'zod';
 import ErrorMessage from './components/ErrorMessage';
 
@@ -66,12 +65,7 @@ function App() {
 		content = <ErrorMessage text={error} />;
 	}
 
-	return (
-		<main>
-			<img src={dataFetching} alt='data fetching blog header image' />
-			{content}
-		</main>
-	);
+	return <main>{content}</main>;
 }
 
 export default App;

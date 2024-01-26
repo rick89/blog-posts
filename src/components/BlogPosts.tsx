@@ -11,7 +11,7 @@ type BlogPostsProps = {
 export default function BlogPosts({ posts }: BlogPostsProps) {
 	return (
 		<div id='blog-posts'>
-			<h1>Blog Posts</h1>
+			<h1>Posts</h1>
 			<ul>
 				{posts.map((post) => (
 					<li key={post.id}>
